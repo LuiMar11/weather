@@ -62,6 +62,7 @@ form.addEventListener("submit", (e) => {
           <img class="city-icon" src="${icon}" alt="">
           <figcaption>${weather[0]["description"]}</figcaption>
         </figure>
+        <div class="city-humidity"><b>Sensación térmica</b> ${Math.round(main.feels_like)}<sup>°C</sup></div>
         <div class = "city-humidity"><b>Humedad</b> ${main.humidity}%</div>
         <div class = "city-humidity"><b>Velocidad viento </b>${wind.speed} m/s</div>
       `;
